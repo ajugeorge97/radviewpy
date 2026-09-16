@@ -4,3 +4,6 @@
 !.gitignore
 !/src/
 !/src/*.py
+
+!src/orthanc/
+!src/orthanc/*.py
