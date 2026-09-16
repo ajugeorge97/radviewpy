@@ -1,5 +1,5 @@
 import requests
-from orthanch.orthanc_client import OrthancClient
+from src.orthanc.orthanc_client import OrthancClient
 
 class RadViewClient:
     def __init__(self, url):

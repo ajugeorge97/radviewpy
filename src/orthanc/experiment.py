@@ -10,15 +10,6 @@ class Experiment(OrthancBase):
         self._data = None
 
     @property
-    def data(self):
-        if self._data is None:
-            response = self.client.session.get(f"{self.client.url}/studies/{self.id}")
-            response.raise_for_status()
-            self._data = response.json()
-
-        return self._data
-
-    @property
     def description(self):
         return self.data.get("MainDicomTags", {}).get("StudyDescription")
 

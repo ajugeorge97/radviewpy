@@ -5,7 +5,7 @@ class Subject(OrthancBase):
     endpoint = "patients"
     def __init__(self, client, data):
         self.client = client
-        self.data = data
+        self._data = data
 
     @property
     def id(self):
