@@ -4,6 +4,12 @@ Python client helpers for RadView and its Orthanc API.
 
 ## Installation
 
+Install directly from GitHub:
+
+```bash
+pip install git+https://github.com/ajugeorge97/radviewpy.git
+```
+
 Install the project from this checkout:
 
 ```bash
