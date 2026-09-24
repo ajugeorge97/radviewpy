@@ -1,5 +1,5 @@
 import requests
-from src.orthanc.subjects import Subject
+from orthanc.subjects import Subject
 
 class OrthancClient:
     def __init__(self,session,url):

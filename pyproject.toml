@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radviewpy"
+version = "0.1.0"
+description = "Python client helpers for RadView and its Orthanc API."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["radviewclient"]
+packages = ["orthanc"]

@@ -1,5 +1,5 @@
-from src.orthanc.scan import Scan
-from src.orthanc.base import OrthancBase
+from orthanc.scan import Scan
+from orthanc.base import OrthancBase
 
 class Experiment(OrthancBase):
     endpoint = "studies"

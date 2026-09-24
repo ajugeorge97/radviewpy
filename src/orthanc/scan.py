@@ -1,4 +1,4 @@
-from src.orthanc.base import OrthancBase
+from orthanc.base import OrthancBase
 
 class Scan(OrthancBase):
     endpoint = "series"

@@ -1,5 +1,5 @@
-from src.orthanc.experiment import Experiment
-from src.orthanc.base import OrthancBase
+from orthanc.experiment import Experiment
+from orthanc.base import OrthancBase
 
 class Subject(OrthancBase):
     endpoint = "patients"

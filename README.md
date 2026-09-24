@@ -1,9 +1,28 @@
-### Example Usage
+# radviewpy
 
-example usage to delete all scans from the radview orthac contains scan-1 and scan-2
+Python client helpers for RadView and its Orthanc API.
+
+## Installation
+
+Install the project from this checkout:
+
+```bash
+pip install .
+```
+
+For development, install it in editable mode:
+
+```bash
+pip install -e .
+```
+
+## Example Usage
+
+Example usage to delete all scans from the RadView Orthanc instance that contain
+`scan-1` or `scan-2`:
 
 ```python
-from src.radviewclient import RadViewClient
+from radviewclient import RadViewClient
 
 if __name__ == "__main__":
     client = RadViewClient("radview-url")
