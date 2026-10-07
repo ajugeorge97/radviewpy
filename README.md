@@ -51,3 +51,26 @@ if __name__ == "__main__":
     client.logout()
 
 ```
+
+## Upload DICOM files
+
+Upload one file:
+
+```python
+from radviewclient import RadViewClient
+
+client = RadViewClient("radview-url")
+client.login("username", "password")
+
+result = client.orthanc.upload_file("data/uploads/image.dcm")
+print(result)
+
+client.logout()
+```
+
+Upload all files from a directory:
+
+```python
+results = client.orthanc.upload_dir("data/uploads")
+print(f"Uploaded {len(results)} files")
+```
